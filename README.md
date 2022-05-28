@@ -38,6 +38,8 @@ sudo systemctl enable zram
 
 Y finalmente, reinicie su computadora.
 
+![Using swap](./preview/swap-enabled.png)
+
 # Uso 
 
 Por defecto se usa 1GB de la memoria por zram, puede cambiar ese valor editando el 

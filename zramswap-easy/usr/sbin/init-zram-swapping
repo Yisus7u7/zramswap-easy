@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Load zram settings
+source /etc/zram/zramswap
+
+# Run zramswap service
+modprobe zram
+
+# Calculate memory to use for zram (1/2 of ram)
+#totalmem=`LC_ALL=C free | grep -e "^Mem:" | sed -e 's/^Mem: *//' -e 's/  *.*//'`
+
+mem=$(($PORCENTAGE*1024*1024))
+
+# initialize the devices
+echo $mem > /sys/block/zram0/disksize
+mkswap /dev/zram0
+swapon -p 5 /dev/zram0

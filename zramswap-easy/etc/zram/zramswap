@@ -1,0 +1,11 @@
+# En este archivo puede definir la cantidad de memoria utilizada por zram
+# in this file you can define the amount of memory used by zram
+
+# Example
+
+# 1GB = 1024
+# 512MB = 512
+
+# Por defecto se usa 1GB / Default 1GB is used
+
+PORCENTAGE=1024

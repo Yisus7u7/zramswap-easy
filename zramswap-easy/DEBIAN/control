@@ -1,0 +1,13 @@
+Package: zramswap-easy
+Version: 1.0
+License: GPL-3.0
+Vendor: Jesus David Chapman Velez
+Architecture: all
+Maintainer: Yisus7u7 <dev.yisus@hotmail.com>
+Installed-Size: 130
+Depends: systemd
+Conflicts: zram-config, zram-tools
+Section: default
+Priority: optional
+Homepage: https://github.com/Yisus7u7/zramswap-easy
+Description: A simple script to get swap over zram using systemd

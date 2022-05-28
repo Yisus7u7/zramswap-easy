@@ -1,0 +1,12 @@
+Description=Swap con zram
+After=multi-user.target
+
+[Service]
+Type=oneshot 
+RemainAfterExit=true
+ExecStartPre=
+ExecStart=/usr/sbin/init-zram-swapping
+ExecStop=/usr/sbin/end-zram-swapping
+
+[Install]
+WantedBy=multi-user.target

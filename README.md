@@ -40,6 +40,8 @@ Y finalmente, reinicie su computadora.
 
 ![Using swap](./preview/swap-enabled.png)
 
+> Puede comprobar que zram está activado ejecutando **swapon -s**
+
 # Uso 
 
 Por defecto se usa 1GB de la memoria por zram, puede cambiar ese valor editando el 

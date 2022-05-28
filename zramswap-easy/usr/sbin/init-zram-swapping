@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/bash
 
 # Load zram settings
 source /etc/zram/zramswap
